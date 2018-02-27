@@ -698,6 +698,9 @@ class Wsdl
             case 'date':
                 return self::XSD_NS . ':date';
 
+            case 'gyearmonth':
+                return self::XSD_NS . ':gYearMonth';
+
             case 'void':
                 return '';
 
