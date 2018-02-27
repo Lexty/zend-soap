@@ -682,6 +682,9 @@ class Wsdl
             case 'double':
                 return self::XSD_NS . ':double';
 
+            case 'decimal':
+                return self::XSD_NS . ':decimal';
+
             case 'boolean':
             case 'bool':
                 return self::XSD_NS . ':boolean';

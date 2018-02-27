@@ -626,6 +626,7 @@ class WsdlTest extends WsdlTestHelper
         $this->assertEquals('xsd:int', $this->wsdl->getType('integer'), 'xsd:int detection failed.');
         $this->assertEquals('xsd:float', $this->wsdl->getType('float'), 'xsd:float detection failed.');
         $this->assertEquals('xsd:double', $this->wsdl->getType('double'), 'xsd:double detection failed.');
+        $this->assertEquals('xsd:decimal', $this->wsdl->getType('decimal'), 'xsd:decimal detection failed.');
         $this->assertEquals('xsd:boolean', $this->wsdl->getType('boolean'), 'xsd:boolean detection failed.');
         $this->assertEquals('xsd:boolean', $this->wsdl->getType('bool'), 'xsd:boolean detection failed.');
         $this->assertEquals('soap-enc:Array', $this->wsdl->getType('array'), 'soap-enc:Array detection failed.');
@@ -789,6 +790,7 @@ class WsdlTest extends WsdlTestHelper
         $this->assertEquals("xsd:int", $this->wsdl->getType("INTEGER"));
         $this->assertEquals("xsd:float", $this->wsdl->getType("FLOAT"));
         $this->assertEquals("xsd:double", $this->wsdl->getType("douBLE"));
+        $this->assertEquals("xsd:decimal", $this->wsdl->getType("deCIMal"));
         $this->assertEquals("xsd:date", $this->wsdl->getType("daTe"));
         $this->assertEquals("xsd:gYearMonth", $this->wsdl->getType("gyearmonTH"));
 
